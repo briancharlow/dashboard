@@ -26,26 +26,26 @@ const Topbar = () => {
         <IconButton type="button" sx={{ p: 1 }}>
           <SearchIcon />
         </IconButton>
+      </Box>
 
-        {/* ICONS */}
-        <Box display="flex" justifyContent="space-between">
-          <IconButton onClick={colorMode.toggleColorMode}>
-            {theme.palette.mode === "dark" ? (
-              <LightModeOutlinedIcon />
-            ) : (
-              <DarkModeOutlinedIcon />
-            )}
-          </IconButton>
-          <IconButton>
-            <NotificationsOutlinedIcon />
-          </IconButton>
-          <IconButton>
-            <SettingsOutlinedIcon />
-          </IconButton>
-          <IconButton>
-            <PersonOutlinedIcon />
-          </IconButton>
-        </Box>
+      {/* ICONS */}
+      <Box display="flex" justifyContent="space-between">
+        <IconButton onClick={colorMode.toggleColorMode}>
+          {theme.palette.mode === "dark" ? (
+            <LightModeOutlinedIcon />
+          ) : (
+            <DarkModeOutlinedIcon />
+          )}
+        </IconButton>
+        <IconButton>
+          <NotificationsOutlinedIcon />
+        </IconButton>
+        <IconButton>
+          <SettingsOutlinedIcon />
+        </IconButton>
+        <IconButton>
+          <PersonOutlinedIcon />
+        </IconButton>
       </Box>
     </Box>
   );
