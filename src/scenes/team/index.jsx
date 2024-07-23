@@ -9,7 +9,7 @@ import Header from "../../components/Header";
 
 const Team = () => {
   const theme = useTheme();
-  const colors = tokens(theme.pallete.mode);
+  const colors = tokens(theme.palette.mode);
   const columns = [
     { field: "id", headerName: "ID" },
     {
@@ -82,7 +82,7 @@ const Team = () => {
           "& .name-column--cell": {
             color: colors.greenAccent[300],
           },
-          "& .MuiDataGrid-columnHeaders": {
+          "& .MuiDataGrid-columnHeader": {
             backgroundColor: colors.blueAccent[700],
             borderBottom: "none",
           },
