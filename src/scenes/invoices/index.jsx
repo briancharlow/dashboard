@@ -10,7 +10,6 @@ const Invoices = () => {
 
   const columns = [
     { field: "id", headerName: "ID" },
-    { field: "registrarId", headerName: "Registrar ID" },
     {
       field: "name",
       headerName: "Name",
@@ -38,11 +37,6 @@ const Invoices = () => {
       ),
     },
     {
-      field: "address",
-      headerName: "Address",
-      flex: 1,
-    },
-    {
       field: "date",
       headerName: "Date",
       flex: 1,
@@ -65,7 +59,7 @@ const Invoices = () => {
           "& .name-column--cell": {
             color: colors.greenAccent[300],
           },
-          "& .MuiDataGrid-columnHeaders": {
+          "& .MuiDataGrid-columnHeader": {
             backgroundColor: colors.blueAccent[700],
             borderBottom: "none",
           },
